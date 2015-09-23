@@ -73,3 +73,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+.git/
+.idea/
+dist/
+lib/
+node_modules/

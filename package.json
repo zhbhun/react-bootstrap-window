@@ -1,0 +1,57 @@
+{
+  "name": "react-bootstrap-window",
+  "version": "0.1.0",
+  "description": "react bootstrap window.",
+  "homepage": "http://github.com/zhbhun/react-bootstrap-window",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhbhun/react-bootstrap-window.git"
+  },
+  "keywords": [
+    "web",
+    "react",
+    "react-component",
+    "bootstrap",
+    "window",
+    "modal",
+    "dialog",
+    "front-end"
+  ],
+  "files": [
+    "dist",
+    "lib/*.js",
+    "style/*.css"
+  ],
+  "main": "./lib/index",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && babel src --out-dir lib -e 0",
+    "test": "webpack-dev-server --config webpack.config.test.js",
+    "dist": "webpack --config webpack.config.dist.js"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "object-assign": "^4.0.1",
+    "react": "~0.13.3",
+    "react-window-kit": "~0.1.0",
+    "react-bootstrap": "^0.25.2"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "bundle-loader": "^0.5.4",
+    "css-loader": "^0.15.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "node-libs-browser": "^0.5.2",
+    "rimraf": "^2.4.3",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "author": "zhbhun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhbhun/react-bootstrap-window/issues"
+  }
+}
