@@ -1,13 +1,10 @@
 ﻿# react-bootstrap-window
-React bootstrap window component, wrap around [react-window-kit](https://github.com/zhbhun/react-window-kit).
+React-Bootstrap window component, wrap around [react-window-kit](https://github.com/zhbhun/react-window-kit).
 
 # Install
 `npm install --save react-bootstrap-window`
 
-# Usage & API
-[react-window-kit](https://github.com/zhbhun/react-window-kit#api)
-
-# Showcase
+# Usage
 ## Modal
 ``` javascript
 class ModalDemo extends React.Component {
@@ -94,7 +91,6 @@ class ConfirmDemo extends React.Component {
 }
 React.render(<ConfirmDemo/>, document.getElementById('confirm-demo'));
 ```
-
 ![Confirm](./doc/confirm.png)
 
 ## Tip
@@ -138,8 +134,50 @@ class ConfirmTip extends React.Component {
 }
 React.render(<ConfirmTip/>, document.getElementById('tip-demo'));
 ```
-
 ![Tip](./doc/tip.png)
+
+# API
+## Window
+| name | type | default | description |
+| ------------ | ------------ | ------------ | ------------ |
+| visible | Boolean | false | whether show window |
+| position | Object | `{align: 'cc', offset: [0, 0]}` | Align option values: tr, tc, tl, cl, cc, cr, bl, bc, br. |
+| size | Object  |   | width, height |
+| closable | Boolean | true |  |
+| maximizable | Boolean | false |   |
+| backdrop | Boolean | true |   |
+| keyboard | Boolean | true |   |
+| animation | Boolean/ReactComponent |   |   |
+| onAlign | function |   |   |
+| onShown | function |   |   |
+| onHide | function |   |   |
+| onHidden | function |   |   |
+
+## Modal
+| name | type | default | description |
+| ------------ | ------------ | ------------ | ------------ |
+| visible | Boolean | false | whether show modal |
+| size | String | md | fl: full screen, lg, md, sm |
+| header | ReactElement |   |   |
+| footer | ReactElement |   |   |
+| onHide | function |   |   |
+
+## Confirm
+| name | type | default | description |
+| ------------ | ------------ | ------------ | ------------ |
+| visible | Boolean | false | whether show confirm |
+| title | String |   |   |
+| onCancel | function |   |   |
+| onOk | function |   |   |
+
+## Tip
+| name | type | default | description |
+| ------------ | ------------ | ------------ | ------------ |
+| visible | Boolean | false | whether show Tip |
+| type | String | info | info, success, warning, danger |
+| title | String |   |   |
+| onOk | function |   |   |
+
 
 # License
 react-bootstrap-window is released under the MIT license.
